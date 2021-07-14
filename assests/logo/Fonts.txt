@@ -1,0 +1,9 @@
+Fonts used in this design:
+
+Font: Roboto
+Author: Christian Robertson
+Url: https://fonts.google.com/specimen/Roboto
+
+Font: Rammetto One
+Author: Vernon Adams
+Url: https://fonts.google.com/specimen/Rammetto+One
