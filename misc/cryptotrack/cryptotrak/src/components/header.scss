@@ -1,0 +1,49 @@
+$base-color: #2bcef5;
+
+@mixin font-b612 {
+  font-family: "B612", sans-serif;
+  font-style: bold;
+}
+
+.fonts_logo {
+  color: yellow;
+  @include font-b612;
+}
+
+.nav-item {
+  color: white;
+  @include font-b612;
+}
+
+.bg-light {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7db9e8+0,2989d8+28,2989d8+54,2989d8+54,207cca+74,1e5799+100 */
+  background: rgb(125, 185, 232); /* Old browsers */
+  background: -moz-linear-gradient(
+    45deg,
+    rgba(125, 185, 232, 1) 0%,
+    rgba(41, 137, 216, 1) 28%,
+    rgba(41, 137, 216, 1) 54%,
+    rgba(41, 137, 216, 1) 54%,
+    rgba(32, 124, 202, 1) 74%,
+    rgba(30, 87, 153, 1) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(125, 185, 232, 1) 0%,
+    rgba(41, 137, 216, 1) 28%,
+    rgba(41, 137, 216, 1) 54%,
+    rgba(41, 137, 216, 1) 54%,
+    rgba(32, 124, 202, 1) 74%,
+    rgba(30, 87, 153, 1) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    45deg,
+    rgba(125, 185, 232, 1) 0%,
+    rgba(41, 137, 216, 1) 28%,
+    rgba(41, 137, 216, 1) 54%,
+    rgba(41, 137, 216, 1) 54%,
+    rgba(32, 124, 202, 1) 74%,
+    rgba(30, 87, 153, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
