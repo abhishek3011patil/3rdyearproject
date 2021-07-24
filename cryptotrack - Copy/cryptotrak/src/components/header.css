@@ -1,0 +1,24 @@
+.fonts_logo {
+  color: yellow;
+  font-family: "B612", sans-serif;
+  font-style: bold;
+}
+
+.nav-item {
+  color: white;
+  font-family: "B612", sans-serif;
+  font-style: bold;
+}
+
+.bg-light {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7db9e8+0,2989d8+28,2989d8+54,2989d8+54,207cca+74,1e5799+100 */
+  background: #7db9e8;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #7db9e8 0%, #2989d8 28%, #2989d8 54%, #2989d8 54%, #207cca 74%, #1e5799 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+/*# sourceMappingURL=header.css.map */

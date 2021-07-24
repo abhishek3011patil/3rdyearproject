@@ -1,0 +1,105 @@
+.Footer {
+  display: -ms-grid;
+  display: grid;
+  padding: 20px 0px;
+  background-color: #13161f;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.Footer h2,
+.Footer h3 {
+  font-family: "Titillium Web", sans-serif;
+  color: white;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social h2 {
+  padding-right: 10px;
+}
+
+.social i {
+  color: #f7931a;
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+.links {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.links li {
+  list-style: none;
+}
+
+.links li h3 {
+  font-weight: 50px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #9d9d9d;
+  font-weight: 100px;
+}
+
+.footer_end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #090c14;
+  height: 50px;
+  font-family: "Titillium Web", sans-serif;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .Footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Footer .social {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=Footer.css.map */

@@ -1,0 +1,34 @@
+$base-color: #2bcef5;
+
+@mixin cairo {
+  font-family: "Cairo", sans-serif;
+}
+
+.home {
+  height: 100vh;
+}
+.part1 {
+  margin-right: 200px;
+}
+.home_inside {
+  padding: 80px;
+}
+
+.part2 img {
+  width: 80vh;
+}
+
+#title_home {
+  font-family: "B612", sans-serif;
+  font-style: italic;
+  font-size: 60px;
+  color: $base-color;
+}
+
+#body_class {
+  margin-bottom: 30px;
+  @include cairo;
+  font-style: none;
+  color: rgb(87, 84, 84);
+  font-size: 20px;
+}

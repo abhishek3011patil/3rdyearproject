@@ -1,0 +1,76 @@
+@import "./colors.scss";
+
+.Footer {
+  display: grid;
+  padding: 20px 0px;
+  background-color: $tools-bg;
+  h2,
+  h3 {
+    font-family: $tillium-font;
+    color: white;
+  }
+  grid-template-columns: 1fr 1fr;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    padding-right: 10px;
+  }
+  i {
+    color: $primary-color;
+    font-size: 20px;
+    padding-right: 10px;
+  }
+}
+.links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  li {
+    list-style: none;
+    h3 {
+      font-weight: 50px;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: #9d9d9d;
+    font-weight: 100px;
+  }
+}
+
+.footer_end {
+  display: flex;
+  background: $tools-card;
+  height: 50px;
+  font-family: $tillium-font;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+//lapi
+@media only screen and (max-width: 1024px) {
+}
+//tablet
+@media only screen and (max-width: 768px) {
+  .Footer {
+    .social {
+      margin-bottom: 30px;
+    }
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+//mobile
+@media only screen and (max-width: 425px) {
+  .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,31 @@
+.home {
+  height: 100vh;
+}
+
+.part1 {
+  margin-right: 200px;
+}
+
+.home_inside {
+  padding: 80px;
+}
+
+.part2 img {
+  width: 80vh;
+}
+
+#title_home {
+  font-family: "B612", sans-serif;
+  font-style: italic;
+  font-size: 60px;
+  color: #2bcef5;
+}
+
+#body_class {
+  margin-bottom: 30px;
+  font-family: "Cairo", sans-serif;
+  font-style: none;
+  color: #575454;
+  font-size: 20px;
+}
+/*# sourceMappingURL=Home.css.map */
