@@ -1,0 +1,87 @@
+@import "./colors.scss";
+
+h1 {
+  height: 5vh;
+  color: $font-color-h;
+  margin: 10px 20px;
+}
+
+.container {
+  display: grid;
+  padding: 20px;
+  min-width: 100%;
+  grid-template-areas:
+    "Card cardhori1"
+    "Card cardhori2";
+
+  grid-gap: 30px;
+}
+
+.Card {
+  grid-area: Card;
+}
+
+.card-hori {
+  display: flex;
+  flex-direction: row;
+  img {
+    width: 250px;
+    height: 150px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  p {
+    font-family: $tillium-font;
+    font-weight: 600;
+    color: $font-color-p;
+    margin-right: 20px;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    margin-right: 20px;
+    margin-bottom: 10px;
+    color: $font-color-h;
+  }
+  a {
+    font-weight: bold;
+    color: $link-color;
+    text-decoration: none;
+  }
+  a:hover {
+    border-bottom: solid;
+  }
+}
+
+.card-hori1 {
+  grid-area: cardhori1;
+}
+
+.card-hori2 {
+  grid-area: cardhori2;
+}
+
+//lapi
+@media only screen and (max-width: 1024px) {
+}
+//tablet
+@media only screen and (max-width: 768px) {
+  .container {
+    grid-template-areas:
+      "Card Card"
+      "cardhori1 cardhori2";
+  }
+
+  .card-hori {
+    flex-direction: column-reverse;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .container {
+    grid-template-areas:
+      "Card "
+      "cardhori1 "
+      "cardhori2";
+  }
+}

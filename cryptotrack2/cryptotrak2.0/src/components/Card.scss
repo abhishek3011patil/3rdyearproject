@@ -1,0 +1,30 @@
+@import "./colors.scss";
+
+.card-body {
+  border-radius: 5px;
+  margin-bottom: 20px;
+
+  img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  h2 {
+    margin-bottom: 10px;
+    color: $font-color-h;
+  }
+  p {
+    margin-bottom: 20px;
+    font-family: $tillium-font;
+    font-weight: 600;
+    color: $font-color-p;
+    font-size: 1.1rem;
+  }
+  a {
+    font-weight: bold;
+    color: $link-color;
+  }
+  a:hover {
+    border-bottom: solid;
+  }
+}

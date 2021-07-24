@@ -1,0 +1,93 @@
+//font-family: 'Lato', sans-serif;
+@import "colors";
+
+@mixin gradiant_primary {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2989d8+22,207cca+62,1e5799+100 */
+  background: rgb(41, 137, 216); /* Old browsers */
+  background: -moz-linear-gradient(
+    45deg,
+    rgba(41, 137, 216, 1) 22%,
+    rgba(32, 124, 202, 1) 62%,
+    rgba(30, 87, 153, 1) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(41, 137, 216, 1) 22%,
+    rgba(32, 124, 202, 1) 62%,
+    rgba(30, 87, 153, 1) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    45deg,
+    rgba(41, 137, 216, 1) 22%,
+    rgba(32, 124, 202, 1) 62%,
+    rgba(30, 87, 153, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2989d8', endColorstr='#1e5799',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.Navbar {
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  background-color: $primary-color;
+  //margin: auto;
+  padding: 20px;
+
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .company_name {
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    flex: 1;
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+  }
+  nav {
+    display: flex;
+    flex: 7;
+    margin-left: 50px;
+    ul {
+      display: flex;
+      flex-direction: row;
+    }
+    .Link {
+      text-decoration: none;
+      li {
+        list-style: none;
+      }
+
+      a {
+        text-decoration: none;
+
+        margin-right: 50px;
+        font-family: "B612", sans-serif;
+        font-weight: 700;
+        padding-bottom: 2px;
+        color: white;
+      }
+      a:hover {
+        border-bottom: solid;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Navbar {
+    nav {
+      display: none;
+    }
+    Button {
+      display: none;
+    }
+  }
+}
