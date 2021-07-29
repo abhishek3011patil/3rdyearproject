@@ -16,18 +16,33 @@
   display: grid;
 
   .home_img {
+    background-color: #f7f6f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
     height: 70vh;
-    background: url(../assests/home_bg.jpg) no-repeat center center/cover;
-    //filter: blur(8px);
-    //-webkit-filter: blur(8px);
+    img {
+      width: 250px;
+      height: 300px;
+      margin-bottom: 50px;
+    }
+
+    h3 {
+      font-family: $tillium-font;
+      font-size: 1.5rem;
+      text-align: center;
+      color: $secondary-color;
+      font-weight: 600;
+    }
   }
 
   h1 {
     text-align: center;
     font-size: 30px;
     font-weight: bold;
-    color: $secondary-color;
+    color: $font-color-h;
     padding-top: 50px;
     height: 20vh;
   }

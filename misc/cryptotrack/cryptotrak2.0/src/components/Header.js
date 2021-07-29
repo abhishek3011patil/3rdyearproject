@@ -10,6 +10,7 @@ const Header = () => {
         <div className="Header">
         <header className="Navbar">
             <img src={logo} alt="" className="logo" />
+            
             <a className="company_name" href="">CRYPTOTRAK</a>
             
             <nav>
