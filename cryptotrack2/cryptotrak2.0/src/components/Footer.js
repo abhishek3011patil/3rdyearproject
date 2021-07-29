@@ -65,7 +65,7 @@ const Footer = () => {
 
                     </Link>
                     <Link className="Link" to="/Videos">
-                    <li><a href="">Support bitcoin</a></li>
+                    <li><a href="">Support Cryptotrak</a></li>
 
                     </Link>
                     
@@ -80,7 +80,7 @@ const Footer = () => {
 
                     </Link>
                     <Link className="Link" to="/Videos">
-                    <li><a href="">Provacy policy</a></li>
+                    <li><a href="">Privacy policy</a></li>
 
                     </Link>
                     <Link className="Link" to="/Contacts">
