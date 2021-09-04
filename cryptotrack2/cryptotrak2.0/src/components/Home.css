@@ -17,6 +17,7 @@
 }
 
 .home h1 {
+  font-family: "Titillium Web", sans-serif;
   text-align: center;
   font-size: 30px;
   font-weight: bold;
@@ -109,18 +110,12 @@
 }
 
 .tools .cardscontainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 100%;
-  padding: 20px 100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+  margin-bottom: 50px;
 }
 
 .tools .cardscontainer .cards {
@@ -140,8 +135,6 @@
           align-items: center;
   width: 200px;
   height: 260px;
-  margin-bottom: 50px;
-  margin-right: 20px;
 }
 
 .tools .cardscontainer .cards i {
@@ -191,6 +184,7 @@
 
 #github img {
   width: 70%;
+  margin-left: 60px;
 }
 
 #github a {
@@ -242,10 +236,35 @@
   #intro p {
     text-align: center;
   }
+  #intro img {
+    width: 50%;
+  }
   .tools .cardscontainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "c1 c1 c2 c2" ". c3 c3 .";
+  }
+  .tools .c1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: c1;
+  }
+  .tools .c2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-area: c2;
+  }
+  .tools .c3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: c3;
   }
   #github {
     display: -webkit-box;
@@ -263,7 +282,9 @@
             align-items: center;
   }
   #github img {
+    width: 50%;
     margin-bottom: 20px;
+    margin-left: 0px;
   }
 }
 

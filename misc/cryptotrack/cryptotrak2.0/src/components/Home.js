@@ -4,6 +4,8 @@ import Button from './Button';
 import './Home.css'
 import Header from './Header'
 import Card from './Card.js';
+import logo from '../assests/logo.svg';
+
 
 import Home_pic from './home_pic.svg';
 import tracker_home from '../assests/tracker_home.jpg';
@@ -20,7 +22,11 @@ const Home = () => {
             <div className="home">
 
             <Header></Header>
-                <div className="home_img"></div>
+                <div className="home_img">
+                    <img src={logo} class="" alt="logo"/>
+                    <h3>Track your favourite cryptocurrency , get live updates of crypto and  calculate your portfolio <br />all in one place</h3>
+
+                    </div>
                 <h1>Welcome to CryptoTrak</h1>
                
                </div>

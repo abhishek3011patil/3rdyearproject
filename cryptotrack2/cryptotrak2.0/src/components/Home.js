@@ -9,7 +9,9 @@ import Home_pic from './home_pic.svg';
 import tracker_home from '../assests/tracker_home.jpg';
 import news_home from '../assests/news_home.jpg';
 import contact_home from '../assests/contact_us_home.jpg';
+import github from '../assests/github.png'
 import Footer from './Footer';
+import logo from '../assests/logo.svg'
 
 
 const Home = () => {
@@ -33,7 +35,7 @@ const Home = () => {
                        Fuga quaerat expedita deleniti possimus, maxime sequi perspiciatis <br/>
                        sint repudiandae molestiae, quidem laborum, <br/>provident adipisci temporibus nesciunt incidunt!</p>
                        </div>
-                       <img src={Home_pic} alt="intro_pic" />
+                       <img src={logo} alt="logo" />
                </section>
 
                <section className="tools ">
@@ -85,7 +87,7 @@ const Home = () => {
                    <a href="https://github.com/abhishek3011patil/3rdyearproject"><span><i class="fab fa-github"></i></span>Github</a>
                    </div>
 
-                   <img src={Home_pic} alt="github" />
+                   <img src={github} alt="github" />
                    </div>  
 
                    <Footer></Footer>

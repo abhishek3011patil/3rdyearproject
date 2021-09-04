@@ -6,14 +6,19 @@ import Button from './Button'
 
 
 const Header = () => {
+    function menu_toggle(){
+    document.querySelector('.main-menu').classList.toggle('show');
+    }
+    
     return (
         <div className="Header">
+            
         <header className="Navbar">
             <img src={logo} alt="" className="logo" />
             <a className="company_name" href="">CRYPTOTRAK</a>
             
             <nav>
-                <ul>
+                <ul className="main-menu">
                 <Link className="Link" to="/">
                     <li><a href="">Home</a></li>
 
@@ -38,8 +43,9 @@ const Header = () => {
                 </ul>
             </nav>
 
-            <Button style={{width:'100px'}} name="Sign Up"> </Button>
-
+            <Button className="buttons" style={{width:'100px'}} name="Sign Up"> </Button>
+            <div onClick={menu_toggle} className="menu-btn"> <i class="fa fa-bars" ></i>
+            </div>
         </header>
         </div>
     )
