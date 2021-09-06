@@ -18,30 +18,7 @@ import logo from '../assests/logo.svg';
 
 const Home = () => {
    
-//     const texts = ["Track cryptocurrencies ,portfolio a much more!"];
-// let count=  0;
-// let index =0;
-// let currentText = '';
-// let letter = '';
-
-// function type(){
-
-//     if(count === texts.length){
-//         count = 0;
-//     }
-
-//    currentText = texts[count];
-    
-//     letter = currentText.slice(0,++index);
-//  document.querySelector('.type').textContent=letter;
-
-//     if(letter.length === currentText.length){
-//         count++;
-       
-//     }
-//     setTimeout(type,100)
-
-// }; 
+   
 
     return (
         <div className="Home" >
@@ -51,7 +28,7 @@ const Home = () => {
 
             <Header></Header>
             <div className="home_img">
-            <h2 > Track cryptocurrencies ,portfolio and 
+            <h2 onLoad={type()} className="type"> Track cryptocurrencies ,portfolio and 
                 much more!</h2>
                 <p>Accurately tracking cryptocurrency investment performance and taxes is hard. We make it easy and help you save money.</p>
                  <a href="#">Get Started</a> 
@@ -63,7 +40,7 @@ const Home = () => {
 
                <section id="intro">
                    <div>
-                       <p>Track your favorite Cryptocurrency's <b>Market Value, Price, Total volume,</b> 
+                       <p >Track your favorite Cryptocurrency's <b>Market Value, Price, Total volume,</b> 
                            <br/> and much more in real time. You can also track your Portfolio
                            <br/> and get live news and updates of crypto all in website.</p>
                    </div>
@@ -127,6 +104,33 @@ const Home = () => {
 
         </div>
     )
+}
+
+function type(){
+     const texts = ["Track cryptocurrencies ,portfolio a much more!"];
+let count=  0;
+let index =0;
+let currentText = '';
+let letter = '';
+
+
+
+    if(count === texts.length){
+        count = 0;
+    }
+
+   currentText = texts[count];
+    
+    letter = currentText.slice(0,++index);
+ document.querySelector('.type').textContent=letter;
+
+    if(letter.length === currentText.length){
+        count++;
+       
+    }
+    setTimeout(type,100)
+
+
 }
 
 export default Home
