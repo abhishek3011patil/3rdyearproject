@@ -23,6 +23,8 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2989d8', endColorstr='#1e5799',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 $primary-color: #f7931a;
 $secondary-color: #f26b16;
 $link-color: rgb(0, 93, 166);
@@ -32,6 +34,7 @@ $primary-color-faded: #f1e6db;
 
 $b612-font: "B612", sans-serif;
 $tillium-font: "Titillium Web", sans-serif;
+$poppins-font: "Poppins", sans-serif;
 
 $shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 $shadow-orange: 0 1px 5px rgba(223, 112, 21, 0.5);
